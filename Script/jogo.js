@@ -105,5 +105,12 @@ function encerrarJogo(vencedor = null) {
     } else {
         h2.innerHTML = "Empate!"
     }
+
+    let contador = 3
+    setInterval(() => {
+        h3.innerHTML = 'Reiniciando... ' +(contador--)
+    }, 1000)
+
+    setTimeout(()=> location.reload(), 4000)
 }
 
