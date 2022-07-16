@@ -17,6 +17,18 @@ const casasIguais = [
     [2,4,6]
 ]
 
+reset.addEventListener('click', resetar)
+
+
+function resetar() {
+    for (let i = 0; i < box.length; i++) {
+        const element = box[i];
+        if(element.innerHTML != '')
+        element.innerHTML = ''
+    }
+    alert('Jogo resetado')
+}
+
 
 
 
